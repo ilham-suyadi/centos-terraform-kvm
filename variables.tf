@@ -22,7 +22,7 @@ variable "virtual_machine_domain" {
 
 variable "ssh_username" {
   description = "User remote server"
-  default     = "apps"
+  default     = "app"
 }
 
 variable "ssh_private_key" {
