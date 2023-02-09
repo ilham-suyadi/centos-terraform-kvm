@@ -1,0 +1,21 @@
+#cloud-config
+# vim: syntax=yaml
+hostname: ${hostname} 
+fqdn: ${hostname}.${domain}
+prefer_fqdn_over_hostname: true
+ssh_pwauth: true
+disable_root: false
+chpasswd:
+  list: |
+    root:247 # password for root
+  expire: false
+
+users:
+  - name: app # you can change name
+    sudo: ALL=(ALL) NOPASSWD:ALL
+    groups: users, admin
+    home: /home/app # supaya lebih mudah samakan dengan dengan name
+    shell: /bin/bash
+    lock_passwd: true
+    ssh-authorized-keys:
+      - (ssh-key.pub) # copy your ssh key.pub on her
