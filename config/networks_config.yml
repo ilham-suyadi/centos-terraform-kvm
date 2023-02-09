@@ -4,3 +4,5 @@ ethernets:
     dhcp4: true
   eth1:
     dhcp4: true
+
+# configurasion ethernet for all VM

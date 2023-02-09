@@ -19,3 +19,4 @@ users:
     lock_passwd: true
     ssh-authorized-keys:
       - (ssh-key.pub) # copy your ssh key.pub on her
+
