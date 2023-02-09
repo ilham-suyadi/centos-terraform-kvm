@@ -14,7 +14,7 @@ users:
   - name: app # you can change name
     sudo: ALL=(ALL) NOPASSWD:ALL
     groups: users, admin
-    home: /home/app # supaya lebih mudah samakan dengan dengan name
+    home: /home/app # create directory home for apps (new user)
     shell: /bin/bash
     lock_passwd: true
     ssh-authorized-keys:
