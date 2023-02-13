@@ -10,7 +10,7 @@ Saya membuat 2 VMs, yang menggunakan spesifikasi berikut ini :
 2. 1 core CPU
 3. 2 ethernet
 
-Hal-hal lainnya yang saya konfigurasi di dalam script saya sebagi berikut:
+Hal-hal lainnya yang saya konfigurasi di dalam script saya sebagai berikut:
 
 1. Membuat 1 user, yang bernama app
 2. Mengatur password untuk root
